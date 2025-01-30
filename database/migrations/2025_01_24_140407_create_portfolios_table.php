@@ -19,6 +19,7 @@ class CreatePortfoliosTable extends Migration
             $table->string('descricao')->nullable();
             $table->longText('sobre')->nullable();
             $table->string('imagem')->nullable();
+            $table->integer('tipo')->default(1);
             $table->timestamps();
         });
     }
